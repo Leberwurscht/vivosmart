@@ -19,7 +19,7 @@ To get it recognized and mounted, it is necessary to send the command `0x1400000
 sudo python ./send_command.py
 ```
 
-The script depends on pyusb (package `python-usb` in Debian and Ubuntu). It may be necessary to [blacklist the garmin_gps kernel module][osmwiki]. To use the script without sudo, you need to add an [udev rule][osmwiki].
+The script depends on pyusb (package `python-usb` / `python3-usb` in Debian and Ubuntu). It may be necessary to [blacklist the garmin_gps kernel module][osmwiki]. To use the script without sudo, you need to add an [udev rule][osmwiki].
 
 The log files in FIT format can be retrieved from the folders `GARMIN/ACTIVITY` and `GARMIN/MONITOR`. There are several GUI applications with partial support for FIT files, e.g. GoldenCheetah, pytrainer and turtlesport.
 

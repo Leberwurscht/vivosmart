@@ -1,5 +1,7 @@
 #!/usr/bin/env python
 
+from __future__ import print_function
+
 import sys, usb.core, binascii
 
 dev = usb.core.find(idVendor=0x091e, idProduct=0x0003)
@@ -20,4 +22,4 @@ endpoint = dev[0][(0,0)][2]
 data = binascii.unhexlify('140000002f0400000100000000')
 dev.write(endpoint.bEndpointAddress, data)
 
-print "Command sent."
+print("Command sent.")
